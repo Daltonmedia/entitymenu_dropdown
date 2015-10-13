@@ -53,7 +53,7 @@ function entity_menu($hook, $type, $return, $params) {
 	$text = elgg_echo('entitymenu_dropdown:options') . ' &#9660;';
 	$parent = new \ElggMenuItem('entitymenu_dropdown', $text, '#');
 	$parent->addLinkClass('entitymenu-dropdown');
-	$parent->setPriority(1000);
+	$parent->setPriority(9999);
 
 	foreach ($children as $key) {
 		$parent->addChild($return[$key]);
